@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 // 引入我們要當作「頁面」的元件
 import Home from "../views/Home.vue";
@@ -34,7 +34,7 @@ const rt = [
 
 // 建立 router 實體
 const r = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: rt
 });
 
