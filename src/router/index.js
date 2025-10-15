@@ -9,8 +9,8 @@ import Cart from '../views/Cart.vue';
 // 定義我們的路由規則
 const rt = [
     {
-        path: "/",   //當使用者訪問網站根目錄時
-        name:"Home",
+        path: "/",   //當使用者訪問網站根目錄時，路由的實際 URL 路徑
+        name:"Home", //路由的代號名稱
         component: Home  //顯示HomeView元件
     },
     {   // :id 是一個「動態參數」，代表這裡可以接受任何商品 ID
