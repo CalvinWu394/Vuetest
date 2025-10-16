@@ -34,7 +34,7 @@ const showSearch = computed(() => {
 
     <footer class="footer">
       <p>&copy; 2025 高爾夫球具商城. All rights reserved.</p>
-      <p>公司地址 : 台北市信義區信義路777號</p>
+      <p>本網站為個人作品集展示，非商業用途</p>
     </footer>
   </div>
 </template>
