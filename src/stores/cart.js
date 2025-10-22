@@ -55,12 +55,20 @@ const totalPrice = computed(function() {
     }, 0);
 });
 
+const removeFromCart = (removeId) => {
+  //.filter()只有符合條件的項目才會被保留下來
+  const remainItem = cart.value.filter(item => item.firestoreId!==removeId)
+  //把回傳的陣列塞回去cart
+  cart.value = remainItem;
+}
+
 
 // 最後要 export，這樣其他的元件才能使用它們；
 return{
     cart,
     addToCart,
     cartCount,
-    totalPrice
+    totalPrice,
+    removeFromCart
 };
 });

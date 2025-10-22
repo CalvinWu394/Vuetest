@@ -5,6 +5,12 @@ import { useCartStore } from "../stores/cart.js";
 // 呼叫 useCartStore() 來取得購物車 store 的實例 (或稱「遙控器」)；
 // 之後我們就可以透過 cartStore 來存取購物車的狀態和方法；
 const cartStore = useCartStore();
+
+const goBuy = () => {
+   alert('購物車功能建置中');
+};
+
+
 </script>
 
 

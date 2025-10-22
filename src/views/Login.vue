@@ -5,9 +5,9 @@ import { ref } from 'vue';
 const email = ref('');
 const password = ref('');
 
-const handleLogin = () => {
+const Login = () => {
   // 這裡可以放登入的邏輯
-  alert(`Email: ${email.value}\n密碼: ${password.value}`);
+   alert('會員功能建置中');
 };
 </script>
 
@@ -15,7 +15,7 @@ const handleLogin = () => {
   <div class="login-container">
     <div class="login-box">
       <h2>會員登入</h2>
-      <form @submit.prevent="handleLogin">
+      <form @submit.prevent="Login">
         <div class="form-group">
           <label for="email">電子郵件</label>
           <input type="email" id="email" v-model="email" required placeholder="請輸入您的 Email">
@@ -25,6 +25,7 @@ const handleLogin = () => {
           <input type="password" id="password" v-model="password" required placeholder="請輸入您的密碼">
         </div>
         <button type="submit">登入</button>
+        <button onclick="alert('會員功能建置中')">申請會員</button>
       </form>
     </div>
   </div>
